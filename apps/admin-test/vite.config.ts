@@ -19,5 +19,8 @@ export default defineConfig(({ mode }) => {
         ...(vendorUrl ? { vendorUrl } : {}),
       }),
     ],
+    optimizeDeps: {
+      exclude: ['@medusajs/dashboard'],
+    },
   }
 })
