@@ -17,6 +17,9 @@ function dashboardMiddleware(service: DashboardBase) {
       return next()
     }
     const app = service.getApp()
+    if (!app) {
+      return next()
+    }
     app(req, res, next)
   }
 }

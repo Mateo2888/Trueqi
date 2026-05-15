@@ -27,6 +27,9 @@ export default function App() {
             <I18n />
             <I18nProvider>
               <RouterProvider
+                future={{
+                  v7_startTransition: true,
+                }}
                 router={createBrowserRouter(getRouteMap(routes), {
                   basename: __BASE__,
                 })}
