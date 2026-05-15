@@ -4,6 +4,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:api": "turbo run dev --filter=@acme/api",
+    "dev:admin": "turbo run dev --filter=@acme/admin",
+    "dev:vendor": "turbo run dev --filter=@acme/vendor",
     "lint": "turbo run lint",
     "test:integration:http": "turbo run test:integration:http --filter=@mercurjs/integration-tests",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",

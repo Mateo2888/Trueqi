@@ -18,22 +18,4 @@ module.exports = withMercur({
   featureFlags: {
     seller_registration: true
   },
-  modules: [
-    {
-      resolve: '@mercurjs/core/modules/admin-ui',
-      options: {
-        appDir: '',
-        path: '/dashboard',
-        disable: true
-      }
-    },
-    {
-      resolve: '@mercurjs/core/modules/vendor-ui',
-      options: {
-        appDir: '',
-        path: '/seller',
-        disable: true
-      }
-    },
-  ],
 })
